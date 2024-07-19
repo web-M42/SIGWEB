@@ -1,0 +1,6 @@
+.home_header{ display: flex; flex-direction: row; justify-content: space-between; }
+.home_header_links{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; width:60%; }
+.home_header_links a{ text-decoration: none; color: #0D3F2A; font-weight: 700; font-size:18px; }
+
+.home_header_btn { display: flex; justify-content: space-between; align-items: center; }
+.home_header_btn a { background: #008E5B; padding:10px 70px; border-radius: 50px; text-decoration: none; color: #fff; }
