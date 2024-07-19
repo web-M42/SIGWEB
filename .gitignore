@@ -1,0 +1,8 @@
+Projeto/backend/node_modules
+Projeto/backend/*.dbf
+Projeto/backend/*.shp
+.DS_Store
+Documentos
+Camadas/ibge_rodovia_estadual
+Camadas/Imoveis_da_Uniao
+Camadas/ibge_municipio
