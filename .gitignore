@@ -1,6 +1,8 @@
 Projeto/backend/node_modules
 Projeto/backend/*.dbf
 Projeto/backend/*.shp
+Projeto/backend/yarn.lock
+Projeto/frontend/yarn.lock
 .DS_Store
 Documentos
 Camadas/ibge_rodovia_estadual/ibge_rodovia_estadual.shp
