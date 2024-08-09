@@ -1,0 +1,15 @@
+.bloco_noticia { margin:80px 0px 40px 0px; width:90%; margin-left:5%; display: flex; justify-content:center ; align-items: start; }
+.bloco_noticia .noticia_imagem { width:474px; min-height: 397; }
+.bloco_noticia .noticia_imagem img { width: 100%; height: auto; }
+
+.bloco_noticia_conteudo{ width: 40%; }
+.bloco_noticia_titulo { color:#0D3F21; font-size: 48px; font-weight: bold;}
+.bloco_noticia_texto { color:#7A7A7A; font-size: 20px; }
+
+
+.noticia_btn_link { margin:45px 0px 0px 0%; }
+.noticia_btn_link a { text-decoration: none; background:#008E5B ; color:#fff; font-size: 20px; padding: 10px 35px; border-radius: 100px; }
+
+
+.margin-left{ margin-left:30px; }
+.margin-right{ margin-right:30px; }

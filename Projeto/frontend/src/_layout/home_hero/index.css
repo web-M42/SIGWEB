@@ -5,16 +5,12 @@
     width: 100%;
     border-radius: 25px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 30px;
+    width:90%;
+    margin-left: 5%;
 }
 
-.home_hero_logos{
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    align-items: center;
-    margin: 40px 60px 0px 0px;
-}
+.home_hero_logos{ display: flex; width: 100%; justify-content: end; align-items: center; margin: 40px 60px 0px 0px; }
 .home_hero_logos img{ height: 100px; }
 .home_hero_logos img:first-child{ position:relative; top: 15px; }
 

@@ -1,16 +1,19 @@
-import Home_header from './_layout/home_header'
-import Home_hero from './_layout/home_hero'
+import Home from './screens/Home';
 
-function App() {
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Mapas from './screens/Mapas';
+import Comunicacao from './screens/Comunicacao';
+import FaleConosco from './screens/FaleConosco';
+import NoMatch from './screens/NoMatch';
 
-  return (
-    <>
-      <Home_header/>
-      <Home_hero />
-      
-      
-    </>
-  )
+const router = createBrowserRouter([
+  { path: "/", element : <Home />, errorElement: <NoMatch /> },
+  { path: "/mapas", element : <Mapas />, errorElement: <NoMatch /> },
+  { path: "/comunicacao", element : <Comunicacao />, errorElement: <NoMatch /> },
+  { path: "/faleconosco", element : <FaleConosco />, errorElement: <NoMatch /> }
+])
+
+
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App

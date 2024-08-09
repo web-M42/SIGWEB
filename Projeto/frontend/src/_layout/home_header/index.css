@@ -1,4 +1,4 @@
-.home_header{ display: flex; flex-direction: row; justify-content: space-between; }
+.home_header{ width:90%; margin-left: 5%; display: flex; flex-direction: row; justify-content: space-between; margin-top:30px}
 .home_header_links{ display: flex; flex-direction: row; justify-content: space-between; align-items: center; width:60%; }
 .home_header_links a{ text-decoration: none; color: #0D3F2A; font-weight: 700; font-size:18px; }
 

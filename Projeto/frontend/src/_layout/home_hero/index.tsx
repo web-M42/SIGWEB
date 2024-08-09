@@ -1,14 +1,14 @@
 import './index.css'
-import logo_gip_branco from '../../assets/img/gip_logo_branco.png'
-import logo_sfb_branco from '../../assets/img/logo_sfb.png'
+
+import Images from '../../constants/images'
 
 function Home_hero() {
     return (
         <>
             <div className='home_hero'>
                 <div className='home_hero_logos'>
-                    <img src={logo_gip_branco} />
-                    <img src={logo_sfb_branco} />
+                    <img src={Images.logo_gip_branco} />
+                    <img src={Images.logo_sfb_branco} />
                 </div>
                 <div className='home_hero_titulo'>
                     <h1>EXPLORE A REGIÃO</h1>
