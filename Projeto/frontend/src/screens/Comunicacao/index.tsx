@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 
 import IonIcon from '@reacticons/ionicons';
+import { Link } from 'react-router-dom';
+
 import './index.css';
 
 import Home_header from '../../_layout/home_header'
@@ -60,7 +62,7 @@ function Comunicacao() {
             <h5>Noticia</h5>
             <div className='Desk_noticia_body'>
               <p>descrição</p>
-              <a href=""><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></a>
+              <Link to="/noticia/001"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></Link>
             </div>
           </div>
         </div>
@@ -69,7 +71,7 @@ function Comunicacao() {
             <h5>Noticia</h5>
             <div className='Desk_noticia_body'>
               <p>descrição</p>
-              <a href="noticia/123"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></a>
+              <Link to="/noticia/002"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></Link>
             </div>
           </div>
         </div>
@@ -78,7 +80,7 @@ function Comunicacao() {
             <h5>Noticia</h5>
             <div className='Desk_noticia_body'>
               <p>descrição</p>
-              <a href="noticia/123"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></a>
+              <Link to="/noticia/003"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></Link>
             </div>
           </div>
         </div>
@@ -87,7 +89,7 @@ function Comunicacao() {
             <h5>Noticia</h5>
             <div className='Desk_noticia_body'>
               <p>descrição</p>
-              <a href="noticia/123"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></a>
+              <Link to="/noticia/004"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></Link>
             </div>
           </div>
         </div>
@@ -96,7 +98,7 @@ function Comunicacao() {
             <h5>Noticia</h5>
             <div className='Desk_noticia_body'>
               <p>descrição</p>
-              <a href="noticia/123"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></a>
+              <Link to="/noticia/005"><IonIcon name="arrow-forward-outline" className='icon_sec_icon' /></Link>
             </div>
           </div>
         </div>
