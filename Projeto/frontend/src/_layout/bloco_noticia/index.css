@@ -3,7 +3,7 @@
 .bloco_noticia .noticia_imagem img { width: 100%; height: auto; }
 
 .bloco_noticia_conteudo{ width: 40%; }
-.bloco_noticia_titulo { color:#0D3F21; font-size: 48px; font-weight: bold;}
+.bloco_noticia_titulo { color:#0D3F21; font-size: 40px; font-weight: bold;}
 .bloco_noticia_texto { color:#7A7A7A; font-size: 20px; }
 
 

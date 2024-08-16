@@ -1,0 +1,23 @@
+.title_redes { width:100%; font-size: 50px; color:#008E5B; text-align: center; margin:80px 0px 80px 0px; }
+
+.section_redes{ width:70%; margin-left:15%; display: flex; flex-direction: row; justify-content: space-between; align-items: start; }
+.section_redes div { width:250; text-align: center; }
+.section_redes div a { color:#0C2A18; text-decoration: none; }
+.section_redes .icon_sec_icon { color:#fff; font-size: 50px; background: #8CC99E; border-radius: 100px; padding:10px; }
+
+
+
+
+.gip_midias{ width:70%; margin-left:15%; display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; }
+.gip_midias .Box_noticia{ width: 30%; margin-left: 15px; margin-bottom:50px; height: 250px; display: flex; align-items: end; border-radius: 20px; }
+.gip_midias .Box_noticia{ background-image: url(../../assets/img/default.png); background-size: cover; }
+.gip_midias .Box_noticia:first-child{ width: 60%;  }
+.gip_midias .Desk_noticia { width: 100%; height: 150px; background: linear-gradient(to bottom, transparent 30%, #000); display: flex; justify-content: end; align-items: start; flex-direction: column; padding:15px; border-radius: 0px 0px 20px 20px; }
+.gip_midias .Desk_noticia h5 { color:#fff; font-size: 25px; font-weight: bold; margin:0px; }
+.gip_midias .Desk_noticia p { color:#fff; font-size: 14px; }
+.gip_midias .Desk_noticia a { clear: both; color: #555; background: #fff; border-radius: 100px; height: 30px; width: 30px; padding: 10px 0px 0px 10px; font-size: 20px; }
+
+.gip_midias .Desk_noticia_body { display: flex; justify-content: space-between; width: 100%; }
+.gip_midias .Desk_noticia_body { width: 95%; }
+
+

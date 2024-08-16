@@ -1,12 +1,12 @@
 import './index.css'
 import Images from '../../constants/images'
-import { Link } from "react-router-dom"
+//import { Link } from "react-router-dom"
 
 function Home_header() {
     return (
         <>
             <div className='home_header'>
-                <div>
+                <div style={{ width:'25%' }}>
                     <img src={ Images.GIPLOGO } />
                 </div>
                 <div className='home_header_links'>

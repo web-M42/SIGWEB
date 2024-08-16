@@ -39,7 +39,7 @@ function Home() {
   
 
   useEffect(() => {
-    
+    setNoticia([...noticia,{titulo : '', texto  : '', link   : '', image  : ''}])
 
     console.log(noticia)
   }, []);
@@ -47,7 +47,13 @@ function Home() {
   return (
     <div className="main" style={{ /*width:'90%', marginLeft:'5%'*/ }}>
       <Home_header/>
-      <Home_hero />
+      <Home_hero
+        page='home'
+        title='EXPLORE A REGIÃO'
+        desk='Explore os dados da GIP em um mapa interativo e georreferenciado <br/> para uma experiência única e informativa!'
+        link='#'
+        textLink='Navegar'
+      />
       <Bloco_noticia
         link={noticia[0].link     || undefined }
         texto={noticia[0].texto   || undefined}

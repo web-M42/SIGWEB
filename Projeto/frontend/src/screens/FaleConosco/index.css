@@ -1,0 +1,20 @@
+.links_contato { width: 70%; margin-left:15%; display: flex; justify-content: space-between; align-items: start; padding:80px 0px 80px 0px; }
+.links_contato div { text-align: center; }
+
+.links_contato .contato_icon{ font-size: 6em; color: #008E5B; }
+.links_contato h6{ font-size: 28px; color: #008E5B; margin:0px }
+.links_contato p{ font-size: 15px; color: #555;  }
+
+
+.fale_conosco { background: #D7ECDA; padding:80px }
+.fale_conosco h5{ color:#008E5B; font-size: 50px; text-align: center; margin:0px; margin-bottom: 30px; }
+.fale_conosco .inputGroup { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; width: 70%; margin-left:15%; }
+.fale_conosco .inputbox { width: 45%; margin-right: 5%; margin-bottom: 25px; }
+.fale_conosco .inputbox input,
+.fale_conosco .inputbox textarea { width: 100%; background: #fff; border:solid 1px #fff; border-radius: 15px; min-height: 50px; margin-top: 15px; padding:5px; font-size: 20px; color:#555 }
+.fale_conosco .inputbox textarea { min-height: 150px; }
+
+.fale_conosco .inputbox:nth-child(3),
+.fale_conosco .inputbox:nth-child(4) { width: 100%; }
+
+.fale_conosco .buttonFaleConosco { background: #008E5B; padding:15px; border-radius: 100px; color:#fff; width:300px; margin-left: calc(50% - 150px); text-align: center; text-transform: uppercase; cursor:pointer }

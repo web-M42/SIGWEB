@@ -14,6 +14,10 @@ import mapa1 from '../assets/img/mapa_1.png'
 import rodada from '../assets/img/rodada.png';
 import oficina from '../assets/img/officina.png';
 import barra_logo from '../assets/img/barra_de_logos.png';
+import imgdefault from '../assets/img/default.png';
+import minas_icon from '../assets/img/minas_icon.png';
+import bacia_sao_francisco_icon from '../assets/img/bacia_sao_francisco_icon.png';
+import rio_parnaiba_icon from '../assets/img/rio_parnaiba_icon.png';
 
 
 
@@ -33,7 +37,11 @@ const Images = {
     mapa1,
     rodada,
     oficina,
-    barra_logo
+    barra_logo,
+    imgdefault,
+    minas_icon,
+    bacia_sao_francisco_icon,
+    rio_parnaiba_icon,
 }
 
 export default Images
