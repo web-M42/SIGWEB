@@ -12,9 +12,54 @@ const menuItems = {
           type: 'item',
           icon: 'feather icon-home',
           url: '/app/dashboard/default'
-        }
+        },
+        {
+          id: 'camadas',
+          title: 'Camadas',
+          type: 'item',
+          icon: 'feather icon-copy',
+          url: '/app/dashboard/camadas'
+        },
+        {
+          id: 'imoveis',
+          title: 'Imóveis Rurais',
+          type: 'item',
+          icon: 'feather icon-copy',
+          url: '/app/dashboard/camadas'
+        },
+        {
+          id: 'proprietarios',
+          title: 'proprietários',
+          type: 'item',
+          icon: 'feather icon-copy',
+          url: '/app/dashboard/camadas'
+        },
+        {
+          id: 'noticias',
+          title: 'Notícias',
+          type: 'item',
+          icon: 'feather icon-book',
+          url: '/app/dashboard/noticias'
+        },
+        {
+          id: 'parceiros',
+          title: 'Parceiros',
+          type: 'item',
+          icon: 'feather icon-book',
+          url: '/app/dashboard/noticias'
+        },
+        {
+          id: 'usuarios',
+          title: 'Usuários',
+          type: 'item',
+          icon: 'feather icon-user',
+          url: '/app/dashboard/user'
+        },
       ]
     },
+    
+
+/*
     {
       id: 'ui-element',
       title: 'UI ELEMENT',
@@ -219,6 +264,7 @@ const menuItems = {
         }
       ]
     }
+    */
   ]
 };
 
