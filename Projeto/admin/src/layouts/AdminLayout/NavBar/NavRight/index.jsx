@@ -15,22 +15,22 @@ const NavRight = () => {
 
   const notiData = [
     {
-      name: 'Joseph William',
+      name: 'José',
       image: avatar2,
-      details: 'Purchase New Theme and make payment',
+      details: 'Baixou mapa da Bacia do Araguaia',
       activity: '30 min'
     },
     {
-      name: 'Sara Soudein',
+      name: 'Sara',
       image: avatar3,
-      details: 'currently login',
+      details: 'Baiou mapa das propriedades da GIP',
       activity: '30 min'
     },
     {
-      name: 'Suzen',
+      name: 'Suzana',
       image: avatar4,
-      details: 'Purchase New Theme and make payment',
-      activity: 'yesterday'
+      details: 'Entrou',
+      activity: 'ontem'
     }
   ];
 
@@ -44,18 +44,18 @@ const NavRight = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu align="end" className="notification notification-scroll">
               <div className="noti-head">
-                <h6 className="d-inline-block m-b-0">Notifications</h6>
+                <h6 className="d-inline-block m-b-0">Alertas</h6>
                 <div className="float-end">
                   <Link to="#" className="me-2">
-                    mark as read
+                    marcar com lido
                   </Link>
-                  <Link to="#">clear all</Link>
+                  <Link to="#">deletar todos</Link>
                 </div>
               </div>
               <PerfectScrollbar>
                 <ListGroup as="ul" bsPrefix=" " variant="flush" className="noti-body">
                   <ListGroup.Item as="li" bsPrefix=" " className="n-title">
-                    <p className="m-b-0">NEW</p>
+                    <p className="m-b-0">Novos alertas</p>
                   </ListGroup.Item>
                   <ListGroup.Item as="li" bsPrefix=" " className="notification">
                     <Card
@@ -65,18 +65,18 @@ const NavRight = () => {
                       <img className="img-radius" src={avatar1} alt="Generic placeholder" />
                       <Card.Body className="p-0">
                         <p>
-                          <strong>John Doe</strong>
+                          <strong>João</strong>
                           <span className="n-time text-muted">
                             <i className="icon feather icon-clock me-2" />
                             30 min
                           </span>
                         </p>
-                        <p>New ticket Added</p>
+                        <p>Novo usuário</p>
                       </Card.Body>
                     </Card>
                   </ListGroup.Item>
                   <ListGroup.Item as="li" bsPrefix=" " className="n-title">
-                    <p className="m-b-0">EARLIER</p>
+                    <p className="m-b-0">Alertas antigos</p>
                   </ListGroup.Item>
                   {notiData.map((data, index) => {
                     return (
@@ -103,11 +103,12 @@ const NavRight = () => {
                 </ListGroup>
               </PerfectScrollbar>
               <div className="noti-footer">
-                <Link to="#">show all</Link>
+                <Link to="#">Ver todos</Link>
               </div>
             </Dropdown.Menu>
           </Dropdown>
         </ListGroup.Item>
+        {/*
         <ListGroup.Item as="li" bsPrefix=" ">
           <Dropdown>
             <Dropdown.Toggle as={Link} variant="link" to="#" className="displayChatbox" onClick={() => setListOpen(true)}>
@@ -115,6 +116,7 @@ const NavRight = () => {
             </Dropdown.Toggle>
           </Dropdown>
         </ListGroup.Item>
+        */}
         <ListGroup.Item as="li" bsPrefix=" ">
           <Dropdown align={'end'} className="drp-user">
             <Dropdown.Toggle as={Link} variant="link" to="#" id="dropdown-basic">
@@ -123,7 +125,7 @@ const NavRight = () => {
             <Dropdown.Menu align="end" className="profile-notification">
               <div className="pro-head">
                 <img src={avatar1} className="img-radius" alt="User Profile" />
-                <span>John Doe</span>
+                <span>Pessoa logada</span>
                 <Link to="#" className="dud-logout" title="Logout">
                   <i className="feather icon-log-out" />
                 </Link>
@@ -131,22 +133,22 @@ const NavRight = () => {
               <ListGroup as="ul" bsPrefix=" " variant="flush" className="pro-body">
                 <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
-                    <i className="feather icon-settings" /> Settings
+                    <i className="feather icon-settings" /> Configurações
                   </Link>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
-                    <i className="feather icon-user" /> Profile
+                    <i className="feather icon-user" /> Perfil
                   </Link>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
-                    <i className="feather icon-mail" /> My Messages
+                    <i className="feather icon-mail" /> Minhas mensagens
                   </Link>
                 </ListGroup.Item>
                 <ListGroup.Item as="li" bsPrefix=" ">
                   <Link to="#" className="dropdown-item">
-                    <i className="feather icon-lock" /> Lock Screen
+                    <i className="feather icon-lock" /> Sair
                   </Link>
                 </ListGroup.Item>
               </ListGroup>

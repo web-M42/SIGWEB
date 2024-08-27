@@ -16,7 +16,7 @@ function Home_header() {
                     <div><a href="/FaleConosco" className="home_link">Fale conosco</a></div>
                 </div>
                 <div className='home_header_btn'>
-                    <a href="#" className="home_btn_link">Comece a explorar</a>
+                    <a href="/entrar" className="home_btn_link">Comece a explorar</a>
                 </div>
             </div>
         </>

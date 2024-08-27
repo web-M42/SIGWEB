@@ -2,7 +2,7 @@ const menuItems = {
   items: [
     {
       id: 'navigation',
-      title: 'Navigation',
+      title: 'Menu',
       type: 'group',
       icon: 'icon-navigation',
       children: [
@@ -25,14 +25,14 @@ const menuItems = {
           title: 'Imóveis Rurais',
           type: 'item',
           icon: 'feather icon-copy',
-          url: '/app/dashboard/camadas'
+          url: '/app/dashboard/imoveis'
         },
         {
           id: 'proprietarios',
           title: 'proprietários',
           type: 'item',
           icon: 'feather icon-copy',
-          url: '/app/dashboard/camadas'
+          url: '/app/dashboard/proprietarios'
         },
         {
           id: 'noticias',

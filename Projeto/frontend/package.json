@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.24.7",
     "@reacticons/ionicons": "^7.1.0",
     "@types/react-html-parser": "^2.0.6",
     "localforage": "^1.10.0",

@@ -86,7 +86,7 @@ function Noticia() {
         <h1 style={{ textAlign:'center', color:'#0D3F21', fontSize:38 }}>{noticiaEncontrada?.title}</h1>
         <div style={{ display:'flex', flexDirection:'row', justifyContent:'space-between' }}>
           <img src={noticiaEncontrada?.Image} alt={noticiaEncontrada?.title} />
-          <div style={{ padding:20 }} dangerouslySetInnerHTML={{ __html: noticiaEncontrada?.Desk }} />
+          <div style={{ padding:20 }} dangerouslySetInnerHTML={{ __html: noticiaEncontrada?.Desk || '' }} />
         </div>
       </div>
       <Footer />
