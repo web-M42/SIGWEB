@@ -20,6 +20,7 @@ import minas_icon from '../assets/img/minas_icon.png';
 import bacia_sao_francisco_icon from '../assets/img/bacia_sao_francisco_icon.png';
 import rio_parnaiba_icon from '../assets/img/rio_parnaiba_icon.png';
 import logo_sigweb from '../assets/img/logo_sigweb.png';
+import paisagem_rural from '../assets/img/paisagem_rural.png';
 
 
 
@@ -45,7 +46,8 @@ const Images = {
     minas_icon,
     bacia_sao_francisco_icon,
     rio_parnaiba_icon,
-    logo_sigweb
+    logo_sigweb,
+    paisagem_rural
 }
 
 export default Images

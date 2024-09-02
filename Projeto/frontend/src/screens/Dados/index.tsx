@@ -8,7 +8,7 @@ import Footer from '../../_layout/footer';
 import './index.css';
 import Images from '../../constants/images';
 
-function Mapas() {
+function Dados() {
 
   const [noticiaDirection, setNoticiaDirection] = useState('left')
   const [noticia, setNoticia] = useState([
@@ -43,11 +43,11 @@ function Mapas() {
       <Home_header/>
 
       <Home_hero
-        page='mapas'
-        title='Mapas'
-        desk='Explore os mapas disponibilizados pela GIP, e navege em nosso mapa interativo'
+        page='Dados'
+        title='Dados'
+        desk='Explore os dados disponibilizados pela GIP, e navege em nosso mapa interativo'
         link='#'
-        textLink='Acessar mapas'
+        textLink='Acessar dados'
       />
 
 
@@ -124,4 +124,4 @@ function Mapas() {
   )
 }
 
-export default Mapas
+export default Dados

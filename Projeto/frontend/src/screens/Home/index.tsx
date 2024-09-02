@@ -56,7 +56,7 @@ function Home() {
       />
       
 
-      <div style={{ width:'80%', marginLeft:'5%', padding:60, textAlign:'center' }}>
+      <div style={{ width:'80%', marginLeft:'10%', padding:60, textAlign:'center' }}>
 
         <h2 style={{ color:'#0D3F21', fontSize: 40, fontWeight: 'bold' }}>Conheça a GIP</h2>
 
@@ -79,6 +79,27 @@ function Home() {
           </div>  
         </div>
 
+      </div>
+
+
+
+      <div style={{ width:'80%', marginLeft:'10%', padding:60, display:'flex', flexDirection:'row', justifyContent:'space-between' }}>
+          <div style={{ width:'48%', textAlign:'left' }}>
+            <img src={ Images.paisagem_rural } alt="" style={{ width:'100%' }} />
+          </div>
+          <div style={{ width:'48%', textAlign:'left' }}>
+            <h2 style={{ color:'#0D3F21', fontSize: 40, fontWeight: 'bold' }}>Conheça a FIP</h2>
+            <p>
+              O Programa de Investimento Florestal (FIP) é parte do Plano de Investimentos do Brasil para redução do desmatamento e diminuição da pressão antrópica sobre o Cerrado, segundo maior bioma do País. O FIP é composto por oito projetos. Confira abaixo.<br/>
+              É financiado pelo Fundo Estratégico do Clima, no âmbito dos Fundos de Investimentos para o Clima, um mecanismo fiduciário composto por 14 países desde 2009 e implementado, no Brasil, pelo Banco Mundial e o Banco Interamericano de Desenvolvimento.<br/>
+              O FIP apoia países em desenvolvimento na redução da degradação florestal e na promoção do manejo sustentável das florestas, o que leva à redução e neutralização das emissões de carbono.<br/>
+              O Plano de Investimentos do Brasil (PIB) é uma iniciativa do governo federal para o Programa de Investimento Florestal (FIP), destinada a apoiar a implementação de planos e programas nacionais que possuem como foco a redução do desmatamento e a diminuição da pressão pelo desflorestamento no Cerrado, segundo maior bioma do País.<br/>
+              O FIP é financiado pelo Fundo Estratégico do Clima (SFC), um dos dois fundos no âmbito dos Fundos de Investimentos para o Clima (CIF) – mecanismo fiduciário composto por 14 países contribuintes, estabelecido em 2009 e implementado, no Brasil, por meio do Banco Mundial e do Banco Interamericano de Desenvolvimento (BID).<br/>
+              O FIP apoia os países em desenvolvimento para redução do desmatamento e da degradação florestal e na promoção do manejo sustentável das florestas, que leva a reduções de emissões e ao aprimoramento dos estoques de carbono florestal.
+            </p>
+
+            <a href='https://www.gov.br/florestal/pt-br/assuntos/fomento-florestal/projetos-de-cooperacao/projeto-fip-paisagens-rurais/ifn' target='_blank'>Saiba mais</a>
+          </div>  
       </div>
 
 

@@ -6,6 +6,8 @@ function Selecao_area() {
         <>
             <div className='selecao_area'>
                 <h5>Critérios para seleção de área:</h5>
+                <br/>
+                <br/>
                 <div className='icon_sarea'>
                     <div className="cardIcon">
                         <img src={Images.icon1} alt="" />
