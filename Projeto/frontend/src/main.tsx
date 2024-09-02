@@ -13,6 +13,7 @@ import NoMatch from './screens/NoMatch';
 import Entrar from './screens/Entrar';
 import Cadastro from './screens/Cadastro';
 import EsqueciSenha from './screens/esqueciSenha';
+import Dados from './screens/Dados/index.tsx';
 
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       // Rotas da home
       { path: "/", element : <Home /> },
       { path: "mapas", element : <Mapas /> },
+      { path: "dados", element : <Dados /> },
       { path: "comunicacao", element : <Comunicacao /> },
       { path: "faleconosco", element : <FaleConosco /> },
       { path: "noticia/:id", element : <Noticia /> },

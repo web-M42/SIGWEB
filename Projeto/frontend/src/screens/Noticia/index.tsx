@@ -78,13 +78,21 @@ function Noticia() {
     <div className="main" style={{ /*width:'90%', marginLeft:'5%'*/ }}>
       <Home_header />
       
-      <div style={{ width:'60%', marginLeft:'20%', marginBottom:60 }}>
-      <Link to="/comunicacao" style={{ display:'flex', flexDirection:'row', alignItems:'center', textDecoration:'none' }}>
-        <IonIcon name='arrow-back-sharp' style={{ fontSize:18, borderRadius:100, borderWidth:2, borderColor:'#008E5B', color:'#008E5B' }} />
-        <h5 style={{color:'#008E5B', marginLeft:15}}>Voltar</h5>
-      </Link>
-        <h1 style={{ textAlign:'center', color:'#0D3F21', fontSize:38 }}>{noticiaEncontrada?.title}</h1>
-        <div style={{ display:'flex', flexDirection:'row', justifyContent:'space-between' }}>
+      <div style={{ width:'80%', marginLeft:'10%', marginBottom:60 }}>
+
+        <div style={{ display:'flex', justifyContent:'space-between', justifyItems:'start', marginTop:70 }}>
+          <Link to="/comunicacao" style={{ display:'flex', flexDirection:'row', alignItems:'center', textDecoration:'none' }}>
+            <IonIcon name='arrow-back-sharp' style={{ fontSize:18, borderRadius:100, borderWidth:2, borderColor:'#008E5B', color:'#008E5B' }} />
+            <h5 style={{color:'#008E5B', marginLeft:15}}>Voltar</h5>
+          </Link>
+          <h1 style={{ textAlign:'center', color:'#0D3F21', fontSize:38, width:'80%' }}>{noticiaEncontrada?.title}</h1>
+        </div>
+
+        <div style={{ margin:30, textAlign:'center' }}>
+          Autor : <span style={{ color:'#008E5B' }}>Kátia</span> &nbsp;&nbsp;&nbsp;&nbsp; Data : <span style={{ color:'#008E5B' }}>01/01/2024</span>
+        </div>
+        
+        <div style={{ display:'flex', flexDirection:'row', justifyContent:'space-between', width:'80%', marginLeft:'10%' }}>
           <img src={noticiaEncontrada?.Image} alt={noticiaEncontrada?.title} />
           <div style={{ padding:20 }} dangerouslySetInnerHTML={{ __html: noticiaEncontrada?.Desk || '' }} />
         </div>
