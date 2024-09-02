@@ -11,6 +11,8 @@ import FaleConosco from './screens/FaleConosco';
 import Noticia from './screens/Noticia';
 import NoMatch from './screens/NoMatch';
 import Entrar from './screens/Entrar';
+import Cadastro from './screens/Cadastro';
+import EsqueciSenha from './screens/esqueciSenha';
 
 
 
@@ -18,12 +20,18 @@ const router = createBrowserRouter([
   { path: "/", element : <App />,
     errorElement : <NoMatch />,
     children : [
+
+      // Rotas da home
       { path: "/", element : <Home /> },
-      { path: "entrar", element : <Entrar /> },
       { path: "mapas", element : <Mapas /> },
       { path: "comunicacao", element : <Comunicacao /> },
       { path: "faleconosco", element : <FaleConosco /> },
-      { path: "noticia/:id", element : <Noticia /> }
+      { path: "noticia/:id", element : <Noticia /> },
+
+      // Rotas de Cadastrar e Entrar
+      { path: "entrar", element : <Entrar /> },
+      { path: "cadastro", element : <Cadastro /> },
+      { path: "esquecisenha", element : <EsqueciSenha /> },
     ]
   },
 ])

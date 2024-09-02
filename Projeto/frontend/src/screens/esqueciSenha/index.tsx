@@ -7,9 +7,9 @@ import './index.css';
 import Images from '../../constants/images';
 import { Link } from 'react-router-dom';
 
-function Entrar() {
+function EsqueciSenha() {
 
-  const [user,setUser] = useState({ email : '', senha : '' })
+  const [user,setUser] = useState({ email : '' })
 
   useEffect(() => {
   
@@ -29,40 +29,35 @@ function Entrar() {
       <div className="mainLogin">
         <img src={Images.logo_sigweb} />
 
-        <h5>Entrar</h5>
+        <h5>Esqueci a senha</h5>
+
+        <p>Informe seu e-mail para receber as instruções de como recuperar a sua conta.</p>
 
         <div className="preInput">
           <span>E-mail</span>
           <input type="text" placeholder="Informe seu e-mail" onChange={(e) => { setUser({...user, email : e.target.value}) }} />
         </div>
 
-        <div className="preInput">
-          <span>Senha</span>
-          <input type="password" placeholder="Informe sua senha" onChange={(e) => { setUser({...user, senha : e.target.value}) }} />
-        </div>
+        <button className="btnEntar" onClick={() => btnEntrar()}>Enviar e-mail</button>
 
-        <button className="btnEntar" onClick={() => btnEntrar()}>Entrar</button>
-
-        <br/>
-        <br/>
-        <Link to='/esquecisenha'> Esqueci a senha</Link>
         <br/>
         <br/>
 
         <div style={{ display:'flex', flexDirection:'row', justifyContent:'center' }}>
-          <strong>Não tem uma conta?</strong>
+          Já tem conta?
           &nbsp;
           &nbsp;
-          <Link to='/cadastro'> Cadastre-se </Link>
+          <Link to='/entrar'> Entrar </Link>
         </div>
 
         <br/>
         <br/>
       </div>
 
+      
       <Footer />
     </div>
   )
 }
 
-export default Entrar
+export default EsqueciSenha

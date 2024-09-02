@@ -11,6 +11,7 @@ import logo_gip_branco from '../assets/img/gip_logo_branco.png';
 import logo_sfb_branco from '../assets/img/logo_sfb.png';
 import bacia1 from '../assets/img/bacia_1.png';
 import mapa1 from '../assets/img/mapa_1.png'
+import mapa2 from '../assets/img/mapa_2.png'
 import rodada from '../assets/img/rodada.png';
 import oficina from '../assets/img/officina.png';
 import barra_logo from '../assets/img/barra_de_logos.png';
@@ -36,6 +37,7 @@ const Images = {
     logo_sfb_branco,
     bacia1,
     mapa1,
+    mapa2,
     rodada,
     oficina,
     barra_logo,

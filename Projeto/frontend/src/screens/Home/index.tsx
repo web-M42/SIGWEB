@@ -13,8 +13,8 @@ function Home() {
   const [noticia, setNoticia] = useState([
     {
       titulo : 'Conheça a GIP',
-      texto  : '<p>A GIP visa promover a gestão integrada da paisagem na Amazônia, incentivando a recuperação da vegetação nativa, o desenvolvimento de sistemas produtivos sustentáveis, o fortalecimento das cadeias produtivas e a implementação de arranjos inovadores de gestão entre Unidades de Conservação (UCs). </p> <p>As atividades propostas buscam reduzir o desmatamento, fomentar a recuperação florestal e adotar práticas sustentáveis que aumentem a renda das comunidades locais e melhorem a conectividade dos ecossistemas, focando em locais prioritários nos estados do Amazonas, Pará, Rondônia e Acre.</p>',
-      image  : Images.mapa1
+      texto  : '<p>A GIP é uma iniciativa de planejamento, execução e governança territorial entre grupos gestores e interessados de maneira integrada, inclusiva, colaborativa e estratégica; que promovam práticas produtivas sustentáveis, conservação e serviços ecossistêmicos.</p><p>A implementação da Gestão Integrada da Paisagem (GIP) foi iniciada a partir de junho de 2023 pelo SFB/MMA e GIZ no âmbito do Projeto FIP Paisagens Rurais. Os critérios para seleção da área de implementação foram:</p><p>•	Bacias hidrográficas de atuação do Projeto;</p><p>•	Maior concentração de imóveis rurais assistidos pelo Projeto;</p><p>•	Menor distanciamento entre imóveis;</p><p>•	Fragmentação da área, possibilidade de conectividade da paisagem;</p><p>•	Compatibilidade com propostas de intervenção em nível Federal, Estadual e Municipal;</p><p>•	Situação da governança dos municípios – maior abertura para atuação;</p><p>•	Parcerias potenciais atuando na região (Iniciativa Privada, ONGs, Universidades etc.);</p><p>Com base nos critérios foi selecionada a Bacia Hidrográfica 8692 do Triângulo Mineiro, formada pelos Rios Prata e Tijuco, apresentando a maior concentração de imóveis rurais assistidos pelo projeto, cerca de 2.722, envolvendo ações de ATeG (Assistência técnica e Gerencial) pelo Senar com 91 técnicos de campo, 8 supervisores e mais de 48.000 visitas técnicas. A região é objeto de múltiplas ações de diferentes atores, podendo destacar o papel do Governo do Estado de Minas Gerais, em especial atuação do Instituto Estadual de Florestas (IEF), das prefeituras, da Empresa de Assistência Técnica e Extensão Rural (Emater), Comitês de Bacias Hidrográficas, Universidades e iniciativa privada. Outro ponto que colaborou com a escolha foi a experiência do projeto no que tange às Unidades de Avaliação de Indicadores (UAIs), proposta de conectividade da paisagem pelo governo estadual, além de municípios que se destacam na região por ações visando sustentabilidade ambiental.</p>',
+      image  : Images.mapa2
     }
     ,{
       titulo : 'Desenvolvimento de sistemas de produção sustentáveis',
@@ -36,13 +36,13 @@ function Home() {
     }
   ]);
 
-  
 
   useEffect(() => {
     setNoticia([...noticia,{titulo : '', texto  : '', link   : '', image  : ''}])
 
     console.log(noticia)
   }, []);
+
 
   return (
     <div className="main" style={{ /*width:'90%', marginLeft:'5%'*/ }}>
@@ -54,13 +54,41 @@ function Home() {
         link='#'
         textLink='Navegar'
       />
-      <Bloco_noticia
+      
+
+      <div style={{ width:'80%', marginLeft:'5%', padding:60, textAlign:'center' }}>
+
+        <h2 style={{ color:'#0D3F21', fontSize: 40, fontWeight: 'bold' }}>Conheça a GIP</h2>
+
+        <img src={ Images.mapa2 } alt="" style={{ width:'60%', margin:'60px 0px 60px 0px' }} />
+
+        <div style={{ display:'flex', flexDirection:'row', justifyContent:'space-between' }}>
+          <div style={{ width:'48%', textAlign:'left' }}>
+            <p>A GIP é uma iniciativa de planejamento, execução e governança territorial entre grupos gestores e interessados de maneira integrada, inclusiva, colaborativa e estratégica; que promovam práticas produtivas sustentáveis, conservação e serviços ecossistêmicos.</p>
+            <p>Com base nos critérios foi selecionada a Bacia Hidrográfica 8692 do Triângulo Mineiro, formada pelos Rios Prata e Tijuco, apresentando a maior concentração de imóveis rurais assistidos pelo projeto, cerca de 2.722, envolvendo ações de ATeG (Assistência técnica e Gerencial) pelo Senar com 91 técnicos de campo, 8 supervisores e mais de 48.000 visitas técnicas. A região é objeto de múltiplas ações de diferentes atores, podendo destacar o papel do Governo do Estado de Minas Gerais, em especial atuação do Instituto Estadual de Florestas (IEF), das prefeituras, da Empresa de Assistência Técnica e Extensão Rural (Emater), Comitês de Bacias Hidrográficas, Universidades e iniciativa privada. Outro ponto que colaborou com a escolha foi a experiência do projeto no que tange às Unidades de Avaliação de Indicadores (UAIs), proposta de conectividade da paisagem pelo governo estadual, além de municípios que se destacam na região por ações visando sustentabilidade ambiental.</p>
+          </div>
+          <div style={{ width:'48%', textAlign:'left' }}>
+            <p>A implementação da Gestão Integrada da Paisagem (GIP) foi iniciada a partir de junho de 2023 pelo SFB/MMA e GIZ no âmbito do Projeto FIP Paisagens Rurais. Os critérios para seleção da área de implementação foram:</p>
+            <p>•	Bacias hidrográficas de atuação do Projeto;</p>
+            <p>•	Maior concentração de imóveis rurais assistidos pelo Projeto;</p>
+            <p>•	Menor distanciamento entre imóveis;</p>
+            <p>•	Fragmentação da área, possibilidade de conectividade da paisagem;</p>
+            <p>•	Compatibilidade com propostas de intervenção em nível Federal, Estadual e Municipal;</p>
+            <p>•	Situação da governança dos municípios – maior abertura para atuação;</p>
+            <p>•	Parcerias potenciais atuando na região (Iniciativa Privada, ONGs, Universidades etc.);</p>
+          </div>  
+        </div>
+
+      </div>
+
+
+      {/* <Bloco_noticia
         link={noticia[0].link     || undefined }
         texto={noticia[0].texto   || undefined}
         titulo={noticia[0].titulo || undefined}
         image={noticia[0].image   || undefined}
         direction='left'
-      />
+      /> */}
 
       <Selecao_area />
       
@@ -88,6 +116,12 @@ function Home() {
       />
 
       <img src={Images.barra_logo} style={{ width:'80%', marginLeft:'10%' }} />
+
+
+
+      
+
+
 
       <Footer />
 

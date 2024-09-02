@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import IonIcon from '@reacticons/ionicons';
 import './index.css';
@@ -9,9 +9,15 @@ import Footer from '../../_layout/footer';
 
 function FaleConosco() {
 
+  const [msg,setMsg] = useState({ nome : '', email : '', assunto : '', msg : '' })
+
   useEffect(() => {
     
   }, []);
+
+  function enviar(): void {
+    console.log(msg)
+  }
 
   return (
     <div className="main" style={{ /*width:'90%', marginLeft:'5%'*/ }}>
@@ -46,12 +52,12 @@ function FaleConosco() {
       <div className="fale_conosco">
         <h5>Fale Conosco</h5>
         <div className="inputGroup">
-          <div className="inputbox"><span>Nome</span><input type="text" /></div>
-          <div className="inputbox"><span>E-mail</span><input type="text" /></div>
-          <div className="inputbox"><span>Assunto</span><input type="text" /></div>
-          <div className="inputbox"><span>MEnsagem</span><textarea></textarea></div>
+          <div className="inputbox"><span>Nome</span><input placeholder='Escreva seu nome' type="text" onChange={(e) => { setMsg({...msg, nome : e.target.value}) }}/></div>
+          <div className="inputbox"><span>E-mail</span><input placeholder='Escreva seu email' type="text" onChange={(e) => { setMsg({...msg, email : e.target.value}) }}/></div>
+          <div className="inputbox"><span>Assunto</span><input placeholder='Escreva seu assunto' type="text" onChange={(e) => { setMsg({...msg, assunto : e.target.value}) }}/></div>
+          <div className="inputbox"><span>Mensagem</span><textarea placeholder='Escreva sua mensagem' onChange={(e) => { setMsg({...msg, msg : e.target.value}) }}></textarea></div>
         </div>
-        <div className="buttonFaleConosco">enviar</div>
+        <div className="buttonFaleConosco" onClick={() => enviar()}>enviar</div>
       </div>
 
 
