@@ -11,49 +11,49 @@ const menuItems = {
           title: 'Dashboard',
           type: 'item',
           icon: 'feather icon-home',
-          url: '/app/dashboard/default'
+          url: '/home'
         },
         {
           id: 'camadas',
           title: 'Camadas',
           type: 'item',
           icon: 'feather icon-copy',
-          url: '/app/dashboard/camadas'
+          url: '/camadas'
         },
         {
           id: 'imoveis',
           title: 'Imóveis Rurais',
           type: 'item',
           icon: 'feather icon-copy',
-          url: '/app/dashboard/imoveis'
+          url: '/imoveis'
         },
         {
           id: 'proprietarios',
           title: 'proprietários',
           type: 'item',
           icon: 'feather icon-copy',
-          url: '/app/dashboard/proprietarios'
+          url: '/proprietarios'
         },
         {
           id: 'noticias',
           title: 'Notícias',
           type: 'item',
           icon: 'feather icon-book',
-          url: '/app/dashboard/noticias'
+          url: '/noticias'
         },
         {
           id: 'parceiros',
           title: 'Parceiros',
           type: 'item',
           icon: 'feather icon-book',
-          url: '/app/dashboard/noticias'
+          url: '/noticias'
         },
         {
           id: 'usuarios',
           title: 'Usuários',
           type: 'item',
           icon: 'feather icon-user',
-          url: '/app/dashboard/user'
+          url: '/user'
         },
       ]
     },

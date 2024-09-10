@@ -1,5 +1,27 @@
-const { DBFFile } = require('dbffile');
-var shapefile = require("shapefile");
+import express from 'express';
+import swaggerUi from 'swagger-ui-express';
+
+import swaggerFile from './swagger.json';
+
+import rota from './router.tsx';
+
+const app = express();
+
+app.use(express.json());
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile))
+
+app.use(rota);
+
+app.listen(3333, () => {
+  console.log('Server is up! :D')
+})
+
+
+
+
+/* const { DBFFile } from "dbffile";
+const shapefile from "shapefile";
 
 async function readDBF() {
     let dbf = await DBFFile.open('./ibge_municipio.dbf');
@@ -18,7 +40,7 @@ shapefile.open("./ibge_municipio.shp")
             console.log(result.value.geometry.coordinates);
             /* result.value.geometry.coordinates[0].map((e) => {
                 console.log(e)
-            }) */
+            }) * /
             return source.read().then(log);
         }))
     .catch(error => console.error(error.stack));
@@ -29,4 +51,4 @@ shapefile.open("./ibge_municipio.shp")
 //readSHP()
 readDBF()
 
-//Teste de git
+//Teste de git */
