@@ -52,32 +52,32 @@ const routes = [
     routes: [
       {
         exact: 'true',
-        path: '/app/dashboard/default',
+        path: '/home',
         element: lazy(() => import('./views/dashboard'))
       },
       {
         exact: 'true',
-        path: '/app/dashboard/camadas',
-        element: lazy(() => import('./views/ui-elements/basic/BasicButton'))
+        path: '/camadas',
+        element: lazy(() => import('./views/camadas'))
       },
       {
         exact: 'true',
-        path: '/app/dashboard/imoveis',
-        element: lazy(() => import('./views/ui-elements/basic/BasicBadges'))
+        path: '/imoveis',
+        element: lazy(() => import('./views/imoveis'))
       },
       {
         exact: 'true',
-        path: '/app/dashboard/proprietarios',
-        element: lazy(() => import('./views/ui-elements/basic/BasicBreadcrumb'))
+        path: '/proprietarios',
+        element: lazy(() => import('./views/proprietarios'))
       },
       {
         exact: 'true',
-        path: '/app/dashboard/noticias',
-        element: lazy(() => import('./views/ui-elements/basic/BasicCollapse'))
+        path: '/noticias',
+        element: lazy(() => import('./views/noticias'))
       },
       {
         exact: 'true',
-        path: '/app/dashboard/user',
+        path: '/user',
         element: lazy(() => import('./views/usuarios'))
       },
     ]
